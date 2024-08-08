@@ -34,6 +34,10 @@ def desenhar_pontuacao(pontuacao):
     texto = fonte.render(f"Pontos: {pontuacao} ", True, vermelha) #o parametro true serve apenas visualmente mais bonito, nao tanto pixelado
     tela.blit(texto, [1,1])
 
+    fonte1 = pygame.font.SysFont("Helvetica", 30)
+    texto = fonte1.render("Desenvolvido por Lucas", True, branca)
+    tela.blit(texto, [420,1])
+
 def selecionar_velocidade(tecla):
     if tecla == pygame.K_DOWN:
         velocidade_x = 0
